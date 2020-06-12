@@ -1,0 +1,8 @@
+# cache
+node_modules
+dist
+out
+*.vsix
+
+# msc
+*.DS_Store
