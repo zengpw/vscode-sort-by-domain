@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:vscode-sort-by-domain.sort"
+		"onCommand:vscode-sort-by-domain.sort"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "vscode-sort-by-domain.sort",
-                "title": "%commands.vscode-sort-by-domain.sort%"
+				"title": "%commands.vscode-sort-by-domain.sort%"
 			}
 		],
 		"menus": {
