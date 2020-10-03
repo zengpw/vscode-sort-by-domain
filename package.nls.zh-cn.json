@@ -1,3 +1,5 @@
 {
-	"commands.vscode-sort-by-domain.sort": "按域名进行排序"
+	"vscode-sort-by-domain.commands.sort": "按域名进行排序",
+	"vscode-sort-by-domain.configuration.failedRowsPosition": "将 `解析失败` 的 `行` 移动到",
+	"vscode-sort-by-domain.configuration.filterKeywords": "关键字（如果没有填写，会尝试解析，不过 `速度` 和 `成功率` 会降低）"
 }

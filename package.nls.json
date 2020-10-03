@@ -1,3 +1,5 @@
 {
-	"commands.vscode-sort-by-domain.sort": "Sort Lines By Domain"
+	"vscode-sort-by-domain.commands.sort": "Sort Lines By Domain",
+	"vscode-sort-by-domain.configuration.failedRowsPosition": "Move `failed` parsing `rows` to",
+	"vscode-sort-by-domain.configuration.filterKeywords": "Keywords (If it is not filled in, it will try to parse it)"
 }

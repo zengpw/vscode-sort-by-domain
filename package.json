@@ -2,7 +2,7 @@
 	"name": "vscode-sort-by-domain",
 	"displayName": "Sort by domain",
 	"description": "Sort selection lines by domain",
-	"version": "0.0.1",
+	"version": "0.2.0",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
@@ -17,7 +17,7 @@
 		"commands": [
 			{
 				"command": "vscode-sort-by-domain.sort",
-				"title": "%commands.vscode-sort-by-domain.sort%"
+				"title": "%vscode-sort-by-domain.commands.sort%"
 			}
 		],
 		"menus": {
@@ -28,6 +28,26 @@
 					"group": "1_modification"
 				}
 			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "Sort By Domain",
+			"properties": {
+				"sortByDomain.failedRowsPosition": {
+					"type": "string",
+					"markdownDescription": "%vscode-sort-by-domain.configuration.failedRowsPosition%",
+					"enum": [
+						"Bottom",
+						"Top"
+					],
+					"default": "Bottom"
+				},
+				"sortByDomain.filterKeywords": {
+					"type": "string",
+					"markdownDescription": "%vscode-sort-by-domain.configuration.filterKeywords%",
+					"default": ".com|.net|.org|.gov|.edu|.cc|.io"
+				}
+			}
 		}
 	},
 	"publisher": "vincent-zeng",
@@ -45,13 +65,13 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.46.0",
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^7.0.2",
 		"@types/node": "^13.11.0",
-		"eslint": "^6.8.0",
-		"@typescript-eslint/parser": "^2.30.0",
+		"@types/vscode": "^1.46.0",
 		"@typescript-eslint/eslint-plugin": "^2.30.0",
+		"@typescript-eslint/parser": "^2.30.0",
+		"eslint": "^6.8.0",
 		"glob": "^7.1.6",
 		"mocha": "^7.1.2",
 		"typescript": "^3.8.3",

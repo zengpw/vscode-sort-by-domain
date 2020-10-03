@@ -6,11 +6,11 @@ import * as sort from './sort';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-	let disposable = vscode.commands.registerCommand('vscode-sort-by-domain.sort', () => {
-		sort.sortLinesByDomain();
-	});
+  let disposable = vscode.commands.registerCommand('vscode-sort-by-domain.sort', () => {
+    sort.sortLinesByDomain();
+  });
 
-	context.subscriptions.push(disposable);
+  context.subscriptions.push(disposable);
 }
 
 // this method is called when your extension is deactivated
